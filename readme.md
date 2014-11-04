@@ -4,10 +4,11 @@ For this lab you are going to use your knowledge of Classes, inheritance and rsp
 
 ### Getting started
 
+0. Taco
 0. Start working on the Grandparent class tests and try to get them to pass one by one. To do this you will need to research how to test if something is an instance of a class. 
 1. The Grandparent should have a class variable called @@grandchildren, that will stor their grandchildren count, which should start at 0 as well as a class variable called @@family which should be an empty array, that will later store their family members.
 2. The Grandparent class should have class methods to return the number of grandchildren and the family array. 
-3. The Grandparent class should also have a method to add an instance of the created class to the family array when initialized (think back to how we used self in the initialize method) [**elaborate**]
+3. In the initialize method, add the instance to the family array
 4. Finally, the Grandparent class should have a class method called showFamily which loops over the @@family array and displays each family member as a hash with the following keys (relation, name, age).  The relation will be whatever Class you have added (either Grandparent, Parent or Child. To do this, you will have to look up how to see what Class something is.
 
 
