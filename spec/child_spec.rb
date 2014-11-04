@@ -39,17 +39,10 @@ describe Child do
   end
 
   describe "Talking" do
-<<<<<<< HEAD
     it "should return a message saying Wahhh! if the child's age is <2 " do
       expect(@child.talk()).to eq("Wahhh!")
-||||||| merged common ancestors
-    it "should return a 'Wahhh!' if the child's age is <2 " do
-
-=======
-    it "should return the message 'Wahhh!' if the child's age is <2 " do
-
->>>>>>> Update child_spec.rb
     end
+
     it "should return a message and include the favorite color when over 2" do
       3.times {@child.growUp}
       expect(@child.talk("Hello")).to eq("Hello, and my favorite color is #{@child.favColor}")
