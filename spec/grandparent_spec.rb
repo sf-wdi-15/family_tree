@@ -7,10 +7,6 @@ describe Grandparent do
     @grandparent = Grandparent.new("marcia",60,"female")
   end
 
-  after(:context) do
-    Grandparent.family.pop
-  end
-
   describe "Initialization" do
     it "is an instance of the Grandparent class" do
       expect(@grandparent).to be_instance_of(Grandparent)

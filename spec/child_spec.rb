@@ -7,10 +7,6 @@ describe Child do
     @child = Child.new("ruby",1,"female")
   end
 
-  after(:context) do
-    Child.family.pop
-  end
-
   describe "Initialization" do
     it "is an instance of the Child class" do
       expect(@child).to be_instance_of(Child)
