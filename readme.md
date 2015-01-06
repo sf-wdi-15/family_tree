@@ -1,6 +1,6 @@
 ## Reading
 
-As an added resource look feel free to read the following: [ruby monk ascent `inheritance` and `more classes`](https://rubymonk.com/learning/books/4-ruby-primer-ascent)
+As an added resource feel free to read the following: [ruby monk ascent `inheritance` and `more classes`](https://rubymonk.com/learning/books/4-ruby-primer-ascent)
 
 ## Family Tree Lab
 
