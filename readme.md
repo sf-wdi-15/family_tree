@@ -1,3 +1,7 @@
+## Reading
+
+As an added resource look feel free to read the following: [ruby monk ascent `inheritance` and `more classes`](https://rubymonk.com/learning/books/4-ruby-primer-ascent)
+
 ## Family Tree Lab
 
 For this lab you are going to use your knowledge of Classes, inheritance and rspec to build a small family tree app and pass a bunch of tests.
