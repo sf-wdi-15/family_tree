@@ -1,29 +1,35 @@
 class Grandparent
+	attr_reader :name, :age, :gender
 
-	@@family = []
-
+	@@family = Array.new(0)
 	@@grandchildren = 0
-	
+
 	def initialize(name,age,gender)
 		@name = name
 		@age = age
 		@gender = gender
+		self.addToFamily(self)
 	end	
 
-	def self.population
-		@@population
+	def self.family
+		@@family
 	end
 
-	def name
-		@name
+	def self.addGrandchild
+		@@grandchildren += 1
 	end
 
-	def age
-		@age
+	def self.grandchildren
+		@@grandchildren
 	end
 
-	def gender
-		@gender
+	def addToFamily(person)
+		@@family.push(person)
+		true
+	end
+
+	def showFamily()
+		@@family
 	end
 
 end
