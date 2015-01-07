@@ -38,7 +38,7 @@ describe Grandparent do
       expect(Grandparent.family).to_not be_empty 
     end
     it "should have a way to access the grandchildren" do
-      expect(Grandparent.grandchildren).to be > 0
+      expect(Grandparent.grandchildren).to be >= 0
     end
   end
 
