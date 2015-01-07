@@ -9,17 +9,18 @@ describe Grandparent do
 
   describe "Initialization" do
     it "is an instance of the Grandparent class" do
-
+      expect(@grandparent).to be_an_instance_of Grandparent
     end
     it "is assigned a name" do
-
+      expect(@grandparent.name).to eq "marcia"
     end
     it "is assigned an age" do
-
+      expect(@grandparent.age).to eq 60
     end
     it "is assigned a gender" do
-
+      expect(@grandparent.gender).to eq "female"
     end
+
   end
 
   describe "class methods" do
