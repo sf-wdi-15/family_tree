@@ -28,12 +28,11 @@ describe Child do
 
     end
     it "should increment the children variable by 1 when created" do
-      expect(Parent.children).to be > 1
+      expect(Parent.children).to be >= 1
 
     end
     it "should increment the grandchildren variable by 1 when created" do
-      expect{@grandparent.addToFamily(@grandparent)}.to change { Grandparent.family.length }.by(1)      
-      expect(Grandparent.grandchildren).to be > 1
+      expect{@child.addToFamily(@child)}.to change { Grandparent.family.length }.by(1)      
     end
   end
 
