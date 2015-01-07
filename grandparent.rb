@@ -25,7 +25,6 @@ class Grandparent
 
 	def addToFamily(person)
 		@@family.push(person)
-		true
 	end
 
 	def showFamily()
