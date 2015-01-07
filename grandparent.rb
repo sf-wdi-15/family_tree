@@ -3,7 +3,7 @@ class Grandparent
 	@@family = []
 
 	@@grandchildren = 0
-
+	
 	def initialize(name,age,gender)
 		@name = name
 		@age = age
