@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Parent do
 
   before(:context) do
-    @parent = Parent.new("david",30,"male")
+    @parent = Parent.new("david",30, :male)
   end
 
 
@@ -18,8 +18,14 @@ describe Parent do
       expect(@parent.age).to eq 30
     end
     it "is assigned a gender" do
-      expect(@parent.gender).to eq "male"
+      expect(@parent.gender).to eq :male
     end
   end
 
+    describe "Adding a child to the parent class" do
+      it "adds each now child to the @@children variable" do
+        expect (Parent).to respond_to :children
+      end
+
+      
 end

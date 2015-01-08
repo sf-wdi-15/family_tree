@@ -2,11 +2,12 @@ require_relative 'grandparent'
 require_relative 'parent'
 
 class Child < Parent
-	def initialize()
+	@@favColors = ["red", "blue", "green"]
+
+	def initialize(name, age, gender)
 		super
-		@name = name
-		@age = age
-		@gender = gender
+		@favColor = @@favColors.sample
+		@@children
 	end
 
 end

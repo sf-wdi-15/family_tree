@@ -4,7 +4,7 @@ require_relative '../grandparent'
 describe Grandparent do
 
   before(:context) do
-    @grandparent = Grandparent.new("marcia",60,"female")
+    @grandparent = Grandparent.new("marcia",60, :female)
   end
 
   describe "Initialization" do
@@ -12,37 +12,38 @@ describe Grandparent do
       expect(@grandparent).to be_an_instance_of Grandparent
     end
     it "is assigned a name" do
-      expect(@grandparent.name).to eq "marcia"
+      expect(@grandparent.name).to eq ("marcia")
     end
     it "is assigned an age" do
-      expect(@grandparent.age).to eq 60
+      expect(@grandparent.age).to eq (60)
     end
     it "is assigned a gender" do
-      expect(@grandparent.gender).to eq "female"
+      expect(@grandparent.gender).to eq (:female)
     end
 
   end
 
   describe "class methods" do
     it "should have a way to access the family variable" do
+      expect(Grandparent.family).to respond_to :family
 
     end
     it "should have a way to access the grandchildren" do
-
+      expect(Grandparent.grandchildren).to respond_to :family
     end
   end
 
   describe "Adding to the family" do
     it "gets added to the family" do
-
+      expect(Grandparent.family).to include(@grandparent)
 
     end
   end
 
   describe "Show family" do
     it "Should return an array" do
-
-    end
+      
+  end
 
     # BONUS
     # Loop over the array returned by Grandparent.showFamily and see
