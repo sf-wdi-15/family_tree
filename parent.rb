@@ -1,6 +1,10 @@
 require_relative 'grandparent'
 
-class Parent
+class Parent < Grandparent
+	@@children = []
 
+	def self.children
+		@@children
+	end
 end
 
